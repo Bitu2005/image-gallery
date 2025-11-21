@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Colorful Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Modern Colorful Image Gallery</h1>
+    <p class="subtitle">Curated photos — interiors, coastlines, and landscapes</p>
+  </header>
+
+  <main class="gallery-container">
+    <section class="gallery">
+      <figure class="card">
+        <img src="images\photo1.jpeg" alt="Gallery wall living room">
+        <figcaption class="title">Cozy Gallery Wall</figcaption>
+        <details class="desc">
+          <summary>Details</summary>
+          A stylish living room gallery wall bathed in natural light — warm textiles, layered frames and soft, muted colors.
+        </details>
+      </figure>
+
+      <figure class="card">
+        <img src="images\photo2.jpeg" alt="Manarola seaside village">
+        <figcaption class="title">Clifftop Seaside Village</figcaption>
+        <details class="desc">
+          <summary>Details</summary>
+          Colorful Mediterranean houses cascading down steep cliffs to the rocky shore — dramatic coastal architecture.
+        </details>
+      </figure>
+
+      <figure class="card">
+        <img src="images\photo3.jpeg" alt="Coastal village view">
+        <figcaption class="title">Turquoise Bay View</figcaption>
+        <details class="desc">
+          <summary>Details</summary>
+          Bright turquoise water and pastel houses on rocky headlands — a classic travel-view highlight.
+        </details>
+      </figure>
+
+      <figure class="card">
+        <img src="images\photo4.jpeg" alt="Mediterranean shoreline">
+        <figcaption class="title">Quiet Shoreline</figcaption>
+        <details class="desc">
+          <summary>Details</summary>
+          Earthy coastal foreground with sparse vegetation and a calm, deep-blue sea — peaceful landscape.
+        </details>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Created for deployment demo — images are local paths</small>
+  </footer>
+
+  <script>
+    // Open image in a new tab when clicked
+    document.addEventListener('click', (e) => {
+      const img = e.target.closest('img');
+      if (img) window.open(img.src, '_blank');
+    });
+  </script>
+</body>
+</html>
